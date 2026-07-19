@@ -28,6 +28,8 @@ spec:
         app: recommendationservice
     spec:
       serviceAccountName: recommendationservice
+      imagePullSecrets:
+        - name: ghcr-secret
       terminationGracePeriodSeconds: 5
       securityContext:
         fsGroup: 1000
