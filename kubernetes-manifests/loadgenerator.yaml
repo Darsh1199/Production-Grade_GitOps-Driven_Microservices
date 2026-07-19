@@ -30,6 +30,8 @@ spec:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
       serviceAccountName: loadgenerator
+      imagePullSecrets:
+        - name: ghcr-secret
       terminationGracePeriodSeconds: 5
       restartPolicy: Always
       securityContext:
