@@ -50,7 +50,7 @@ jobs:
         with:
           registry: ghcr.io
           username: darsh1199
-          password: ${{ secrets.GHCR_PAT }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       # -------------------
       # Build Docker Image
